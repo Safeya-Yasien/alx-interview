@@ -1,50 +1,27 @@
-Curriculum <br>
-**Short Specializations** <br>
+# N queens
 
-# 0x05. N Queens
+The N queens puzzle is a challenge of placing N non-attacking queens on an NxN chessboard.
 
-`Algorithm` `Python`
+On a chessboard, the queen can move any number of squares vertically, horizontally
+or diagonally.Thus, to solve the puzzle, each queen must be placed on its own
+row, column and diagonal.
 
-#### Concepts
+This is most efficiently solved using a backtracking algorithm. Backtracking is
+a general algorithm for finding solutions to some computational problems that
+incrementally builds candidates to the solutions, and abandons a candidate i.e.,
+backtracks as soon as it determines that the candidate cannot possibly be completed
+to a valid solution.
 
-_For this project, look at these concepts:_
+## Usage
 
-* [Technical Interview](https://www.alx-intranet.hbtn.io/concepts/100005)
-
-## Resources
-
-**Read or watch:**
-
-* [Queen](https://www.en.wikipedia.org/wiki/Queen_%28chess%29)
-* [Backtracking](https://www.en.wikipedia.org/wiki/Backtracking)
-
-## General Requirements
-
-* Allowed editors: `vi`, `vim`, `emacs`
-* Files interpreted/compiled on Ubuntu 14.04 LTS using `python3` (version 3.4.3)
-* All files should end with a new line
-* Files first line exactly shebang `#!/usr/bin/python3`
-* A `README.md` file is mandatory
-* Code documented and using `PEP 8` style (version 1.7.x)
-* Files must be executable
-
-## General Learning & Setup
-
-`python.py`
-<details>
-  <summary>Click to show/hide file contents</summary>
-
-  ```python3
-  #!/usr/bin/python3
-  import sys, argv
-  if __name__ == "__main__":
-
-  class ClassAct:
-  	pass
-
-  def fn():
-      pass
-  ```
-</details>
-
-# Finally...
+```nqueens N```
+where N is the number of queens.
+      - N must be an integer greater or equal to 4
+      - the program prints every possible solution to the problem in the format
+        shown below
+```
+$ ./0-nqueens 4
+[[0, 1], [1, 3], [2, 0], [3, 2]]
+[[0, 2], [1, 0], [2, 3], [3, 1]]
+```
+Each inner list represents the coordinates of a queen in the NxN chessboard.
